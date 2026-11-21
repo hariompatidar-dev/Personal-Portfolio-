@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>H. Patidar | Portfolio</title>
+
+    <title>Projects | H. Patidar</title>
+
     <link rel="stylesheet" href="./dist/output.css" />
     <script src="./src/js/app.js" defer></script>
+    <script src="./src/js/projects.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +18,183 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+
+  <body class="bg-portfolio-bg text-portfolio-ink">
     <div id="site-header"></div>
+
+    <main
+      class="mx-auto w-full max-w-375 px-6 pt-10 pb-16 md:px-8 md:pt-14 xl:px-10"
+    >
+      <!-- PROJECTS HEADER -->
+      <section
+        class="mb-12 grid grid-cols-1 items-center gap-6 md:grid-cols-[1.5fr_0.8fr] md:gap-12"
+      >
+        <div>
+          <div class="mb-5 flex items-center gap-4">
+            <span class="h-0.75 w-12 bg-portfolio-coral"></span>
+            <p
+              class="text-sm font-semibold uppercase tracking-widest text-portfolio-muted"
+            >
+              Projects
+            </p>
+          </div>
+
+          <h1
+            class="font-display text-4xl leading-[1.12] tracking-tight sm:text-5xl xl:text-6xl"
+          >
+            A selection of projects built with
+            <span class="italic text-portfolio-coral"
+              >HTML, CSS and JavaScript.</span
+            >
+          </h1>
+        </div>
+
+        <div class="border-l border-portfolio-border pl-6 md:pl-8">
+          <p class="text-base leading-8 text-portfolio-muted lg:text-lg">
+            A collection of frontend projects built using HTML, CSS, Tailwind
+            CSS and JavaScript.
+          </p>
+        </div>
+      </section>
+
+      <!-- FEATURED PROJECT SLIDER -->
+
+      <!-- FEATURED PROJECT SLIDER -->
+      <section aria-label="Featured projects">
+        <!-- PROJECT DISPLAY -->
+        <div
+          id="projectDisplay"
+          class="grid grid-cols-1 items-center gap-8 md:grid-cols-[minmax(0,1.6fr)_minmax(280px,0.85fr)] md:gap-12 lg:gap-16"
+        >
+          <!-- PROJECT IMAGE -->
+          <div class="relative aspect-16/10 w-full overflow-hidden rounded-2xl">
+            <img
+              id="projectImage"
+              src="./assets/images/spotify-clone.png"
+              alt="Spotify Clone website"
+              class="h-full w-full rounded-2xl object-cover object-top"
+            />
+          </div>
+
+          <!-- PROJECT INFORMATION -->
+          <div class="flex min-w-0 flex-col justify-center">
+            <p
+              id="projectNumber"
+              class="mb-5 text-base font-semibold tracking-widest text-portfolio-muted"
+            >
+              01 / 03
+            </p>
+
+            <h2
+              id="projectTitle"
+              class="font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl lg:text-5xl"
+            >
+              Spotify Clone
+            </h2>
+
+            <p
+              id="projectDescription"
+              class="mt-5 max-w-lg text-base leading-8 text-portfolio-muted lg:text-lg"
+            >
+              A frontend recreation of Spotify's web player, focusing on its
+              dark interface, layout and visual styling.
+            </p>
+
+            <!-- TECHNOLOGIES -->
+            <div id="projectTechnologies" class="mt-7 flex flex-wrap gap-3">
+              <span
+                class="rounded-lg bg-portfolio-border/40 px-4 py-2 text-sm font-medium"
+              >
+                HTML
+              </span>
+
+              <span
+                class="rounded-lg bg-portfolio-border/40 px-4 py-2 text-sm font-medium"
+              >
+                CSS
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT NAVIGATION -->
+        <div class="mt-12 flex items-center justify-center gap-8 md:mt-16">
+          <!-- PREVIOUS -->
+          <button
+            id="prevProject"
+            type="button"
+            aria-label="Previous project"
+            class="flex size-14 items-center justify-center rounded-full border border-portfolio-muted/60 text-2xl text-portfolio-ink transition duration-300 hover:bg-portfolio-ink hover:text-white"
+          >
+            ←
+          </button>
+
+          <!-- PAGINATION DOTS -->
+          <div
+            id="projectIndicators"
+            class="flex items-center justify-center gap-4"
+            aria-label="Choose a project"
+          ></div>
+
+          <!-- NEXT -->
+          <button
+            id="nextProject"
+            type="button"
+            aria-label="Next project"
+            class="flex size-14 items-center justify-center rounded-full border border-portfolio-muted/60 text-2xl text-portfolio-ink transition duration-300 hover:bg-portfolio-ink hover:text-white"
+          >
+            →
+          </button>
+        </div>
+
+        <!-- PROJECT DETAILS -->
+        <div
+          class="mt-16 rounded-2xl border border-portfolio-border p-7 md:p-10"
+        >
+          <p
+            class="mb-6 text-xs font-semibold uppercase tracking-widest text-portfolio-muted"
+          >
+            Project Details
+          </p>
+
+          <p class="mb-2 text-sm font-semibold text-portfolio-coral">
+            About this project
+          </p>
+
+          <h3
+            id="detailProjectTitle"
+            class="font-display text-3xl tracking-tight"
+          >
+            Spotify Clone
+          </h3>
+
+          <p
+            id="projectAbout"
+            class="mt-4 max-w-5xl text-sm leading-7 text-portfolio-muted md:text-base"
+          >
+            A recreation of Spotify's web player interface.
+          </p>
+
+          <div class="mt-7">
+            <p class="mb-2 font-semibold">Key Focus</p>
+
+            <p
+              id="projectFocus"
+              class="max-w-5xl text-sm leading-7 text-portfolio-muted md:text-base"
+            >
+              Interface layout, dark theme, component arrangement and responsive
+              styling.
+            </p>
+          </div>
+
+          <p
+            id="detailProjectNumber"
+            class="mt-10 font-display text-4xl italic text-portfolio-coral"
+          >
+            01
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

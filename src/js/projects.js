@@ -150,7 +150,7 @@ function updateProject(index) {
 
 // PROJECT NAVIGATION
 function goToProject(index) {
-  // Continuous slider navigation
+
   currentProject = (index + projects.length) % projects.length;
 
   updateProject(currentProject);
@@ -181,7 +181,7 @@ projectIndicators.addEventListener("click", (event) => {
 
 // KEYBOARD NAVIGATION
 document.addEventListener("keydown", (event) => {
-  // Avoid interfering with text inputs
+
   if (
     event.target.matches("input, textarea, select") ||
     event.target.isContentEditable

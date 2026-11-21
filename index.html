@@ -1,13 +1,349 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>H. Patidar | Portfolio</title>
-    <link rel="stylesheet" href="./dist/output.css">
+
+    <link rel="stylesheet" href="./dist/output.css" />
     <script src="./src/js/app.js" defer></script>
 
-</head>
-<body>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="w-full">
+      <nav
+        class="mx-auto flex max-w-375 items-center justify-between px-6 py-5 lg:px-10"
+      >
+        <!-- Logo -->
+        <a
+          href="./index.html"
+          class="font-body text-2xl font-bold tracking-tight"
+        >
+          DEVFOLIO<span class="text-portfolio-coral">.</span>
+        </a>
+
+        <!-- Navigation links -->
+        <div
+          class="hidden items-center gap-9 md:flex md:translate-x-40 lg:traslate-x-44"
+        >
+          <a
+            href="./index.html"
+            class="border-b-2 border-portfolio-coral pb-2 text-sm font-semibold"
+          >
+            Home
+          </a>
+          <a
+            href="./about.html"
+            class="pb-2 text-sm font-medium transition-colors hover:text-portfolio-coral"
+          >
+            About
+          </a>
+
+          <a
+            href="./projects.html"
+            class="pb-2 text-sm font-medium transition-colors hover:text-portfolio-coral"
+          >
+            Projects
+          </a>
+
+          <a
+            href="./contact.html"
+            class="pb-2 text-sm font-medium transition-colors hover:text-portfolio-coral"
+          >
+            Contact
+          </a>
+        </div>
+
+        <!-- Contact CTA -->
+        <a
+          href="./contact.html"
+          class="rounded-full bg-portfolio-ink px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-portfolio-coral"
+        >
+          Let's Talk ↗
+        </a>
+      </nav>
+    </header>
+
+    <main class="mx-auto w-full max-w-375 px-6 pt-8 md:px-8 md:pt-12 xl:px-10">
+      <section
+        class="grid grid-cols-1 items-center gap-8 md:grid-cols-[58fr_42fr] md:gap-6"
+      >
+        <!-- LEFT COLUMN -->
+        <div class="relative z-10 w-full min-w-0">
+          <div class="mb-7 flex items-center gap-4">
+            <span class="h-0.75 w-12 bg-portfolio-coral"></span>
+
+            <p
+              class="text-sm font-semibold uppercase tracking-widest text-portfolio-muted"
+            >
+              Front-end Developer
+            </p>
+          </div>
+
+          <h1
+            class="font-display text-5xl leading-[1.08] tracking-tight sm:text-6xl xl:text-7xl"
+          >
+            <span class="block lg:whitespace-nowrap">
+              Crafting thoughtful
+            </span>
+
+            <span
+              class="block italic text-portfolio-coral lg:whitespace-nowrap"
+            >
+              web experiences.
+            </span>
+          </h1>
+
+          <p
+            class="mt-7 max-w-lg text-base leading-8 text-portfolio-muted lg:text-lg"
+          >
+            I build clean, responsive and user-friendly web interfaces using
+            HTML, CSS, Tailwind CSS and JavaScript.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a
+              href="./projects.html"
+              class="rounded-xl bg-portfolio-coral px-7 py-4 font-semibold text-white transition hover:-translate-y-1"
+            >
+              View Projects ↗
+            </a>
+
+            <a
+              href="./about.html"
+              class="rounded-xl border border-portfolio-ink px-7 py-4 font-semibold text-portfolio-ink transition hover:bg-portfolio-ink hover:text-white"
+            >
+              About Me
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="w-full min-w-0">
+          <div class="hv">
+            <!-- Background SVG -->
+            <svg
+              class="bg"
+              viewBox="0 0 754 682"
+              preserveAspectRatio="xMidYMid slice"
+              aria-hidden="true"
+            >
+              <defs>
+                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" style="stop-color: var(--b1)" />
+                  <stop offset="1" style="stop-color: var(--b2)" />
+                </linearGradient>
+              </defs>
+
+              <path
+                class="bl"
+                d="M590 0C520 80 540 170 640 235C700 275 754 300 754 300V0Z"
+              />
+
+              <path
+                class="wv"
+                d="M0 575C110 500 260 505 380 560C500 615 650 600 754 520V682H0Z"
+              />
+
+              <path class="sw" d="M520 482C610 405 700 385 754 392V682H520Z" />
+
+              <ellipse
+                class="rg"
+                cx="350"
+                cy="290"
+                rx="320"
+                ry="190"
+                transform="rotate(-18 350 290)"
+              />
+            </svg>
+
+            <!-- Character -->
+            <img
+              class="hv-character"
+              src="./assets/images/hero-character.webp"
+              alt="Young developer holding a laptop"
+              width="1199"
+              height="1312"
+              fetchpriority="high"
+              decoding="async"
+            />
+
+            <!-- Technology tiles will go here -->
+            <div
+              class="t"
+              role="img"
+              aria-label="HTML5"
+              style="
+                left: 17.9%;
+                top: 13.2%;
+                width: 14.3%;
+                --r: -9deg;
+                --d: 6.5s;
+                --l: -1s;
+              "
+            >
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill="#E44D26"
+                  d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"
+                />
+                <path
+                  fill="#F16529"
+                  d="M64 116.8l36.378-10.086 8.559-95.878H64z"
+                />
+                <path
+                  fill="#EBEBEB"
+                  d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zM64 88.498l-.059.016-15.317-4.137-.979-10.962H33.816l1.927 21.58 28.193 7.826.064-.018z"
+                />
+                <path
+                  fill="#fff"
+                  d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zM63.952 24.599v13.762h33.244l.276-3.092.628-6.978.329-3.692z"
+                />
+              </svg>
+            </div>
+            <div
+              class="t b"
+              role="img"
+              aria-label="CSS3"
+              style="
+                left: 31.2%;
+                top: 31.2%;
+                width: 11.3%;
+                --r: 5deg;
+                --d: 5.6s;
+                --l: -2.4s;
+              "
+            >
+              <svg viewBox="0 0 24 24">
+                <path
+                  fill="#fff"
+                  d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"
+                />
+              </svg>
+            </div>
+            <div
+              class="t"
+              role="img"
+              aria-label="Tailwind CSS"
+              style="
+                left: 13%;
+                top: 40%;
+                width: 12.2%;
+                --r: -8deg;
+                --d: 7.2s;
+                --l: -3.3s;
+              "
+            >
+              <svg viewBox="0 0 24 24">
+                <path
+                  fill="#38BDF8"
+                  d="M12 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.665 10.618 15.026 12 18 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.336 6.182 14.975 4.8 12 4.8zM6 12c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C7.665 17.818 9.026 19.2 12 19.2c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.336 13.382 8.975 12 6 12z"
+                />
+              </svg>
+            </div>
+            <div
+              class="t y"
+              role="img"
+              aria-label="JavaScript"
+              style="
+                left: 79.2%;
+                top: 31.5%;
+                width: 12.9%;
+                --r: -4deg;
+                --d: 6s;
+                --l: -0.6s;
+              "
+            >
+              <svg viewBox="0 0 100 100">
+                <text
+                  x="50"
+                  y="66"
+                  text-anchor="middle"
+                  font-family="Inter,Arial,sans-serif"
+                  font-weight="800"
+                  font-size="46"
+                  fill="#1a1a1a"
+                >
+                  JS
+                </text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATISTICS SECTION -->
+      <section class="relative z-10 mt-8 mb-16">
+        <div
+          class="grid grid-cols-2 items-center md:grid-cols-4
+            px-5 py-7 md:px-8 md:py-8"
+        >
+          <!-- Stat 1 -->
+          <div
+            class="flex flex-col gap-2 border-r border-b border-portfolio-border px-4 py-4 md:px-6 md:border-b-0"
+          >
+            <h3
+              class="text-3xl font-semibold tracking-tight text-portfolio-coral lg:text-4xl"
+            >
+              3+
+            </h3>
+
+            <p class="text-sm text-portfolio-muted lg:text-base">
+              Projects Completed
+            </p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div
+            class="flex flex-col gap-2 border-b border-portfolio-border px-4 py-4 md:px-6 md:border-b-0 md:border-r"
+          >
+            <h3
+              class="text-3xl font-semibold tracking-tight text-portfolio-coral lg:text-4xl"
+            >
+              100%
+            </h3>
+
+            <p class="text-sm text-portfolio-muted lg:text-base">
+              Responsive Design
+            </p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div
+            class="flex flex-col gap-2 border-r border-portfolio-border px-4 py-4 md:px-6"
+          >
+            <h3
+              class="text-3xl font-semibold tracking-tight text-portfolio-coral lg:text-4xl"
+            >
+              Clean
+            </h3>
+
+            <p class="text-sm text-portfolio-muted lg:text-base">
+              UI Implementation
+            </p>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="flex flex-col gap-2 px-4 py-4 md:px-6">
+            <h3
+              class="text-3xl font-semibold tracking-tight text-portfolio-coral lg:text-4xl"
+            >
+              Accessible
+            </h3>
+
+            <p class="text-sm text-portfolio-muted lg:text-base">
+              Web Interfaces
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

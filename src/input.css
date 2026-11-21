@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
-
 @import "tailwindcss";
+
+/* Explicitly register portfolio HTML files */
+@source "../index.html";
+@source "../about.html";
+@source "../projects.html";
+@source "../contact.html";
 
 @theme {
   /* Colors */
@@ -12,12 +16,11 @@
   --color-portfolio-border: #EADAD2;
   --color-portfolio-white: #FFFCFA;
 
-  /* Typography */
+  /* Fonts */
   --font-display: "Playfair Display", serif;
   --font-body: "DM Sans", sans-serif;
 }
 
-/* Base styles */
 @layer base {
   * {
     box-sizing: border-box;
@@ -34,3 +37,118 @@
     font-family: var(--font-body);
   }
 }
+
+/*  home hero section  */ 
+/* =================================
+   HERO VISUAL — CLAUDE COMPONENT
+================================= */
+
+.hv {
+    --hero-bg: #FFF8F4;
+    --b1: #F6CFC8;
+    --b2: #F0B3AB;
+    --wv: #F8DCD6;
+    --sw: rgba(255, 255, 255, 0.45);
+    --ring: #EEB4AB;
+    --sh: rgba(150, 70, 55, 0.3);
+
+    position: relative;
+    width: 100%;
+    max-width: 680px;
+    aspect-ratio: 754 / 682;
+    overflow: hidden;
+    isolation: isolate;
+    container-type: inline-size;
+    margin-inline: auto;
+}
+
+.hv .bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hv .bg .bl {
+    fill: url(#g1);
+}
+
+.hv .bg .wv {
+    fill: var(--wv);
+    opacity: 0.75;
+}
+
+.hv .bg .sw {
+    fill: var(--sw);
+}
+
+.hv .bg .rg {
+    fill: none;
+    stroke: var(--ring);
+    stroke-width: 1.5;
+}
+
+.hv .hv-character {
+    position: absolute;
+    z-index: 2;
+    left: 11%;
+    top: -0.5%;
+    width: 83.8%;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+}
+
+.hv .t {
+    position: absolute;
+    z-index: 3;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    border-radius: 24%;
+
+    background: linear-gradient(145deg, #fff, #f5ece8);
+
+    box-shadow:
+        0 2.4cqw 3cqw -1.6cqw var(--sh),
+        0 0.6cqw 1.2cqw -0.4cqw rgba(150, 70, 55, 0.18),
+        inset 0 2px 1px #fff,
+        inset 0 -0.9cqw 1.4cqw rgba(150, 70, 55, 0.08);
+
+    transform: rotate(var(--r));
+    animation: fl var(--d) ease-in-out var(--l) infinite;
+}
+
+.hv .t svg {
+    width: 56%;
+    height: 56%;
+    display: block;
+}
+
+.hv .t.b {
+    background: linear-gradient(145deg, #4f8bfc, #2158d8);
+
+    box-shadow:
+        0 2.4cqw 3cqw -1.6cqw rgba(33, 88, 216, 0.5),
+        inset 0 2px 1px rgba(255, 255, 255, 0.5);
+}
+
+.hv .t.y {
+    background: linear-gradient(145deg, #fcec63, #f1d311);
+}
+
+
+
+@keyframes fl {
+    50% {
+        transform: translateY(-1.8cqw)
+                   rotate(calc(var(--r) + 3deg));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hv .t {
+        animation: none;
+    }
+}
+
